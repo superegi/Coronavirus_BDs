@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+
+
+%\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+%% Sets page size and margins
+\usepackage[letterpaper,top=3.5cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm, headsep = 70pt]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{booktabs, makecell}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[hang, small,up,textfont=it,up]{caption} 
+\usepackage{fancyhdr}
+
+
+%cabecera y pies
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\includegraphics[width=0.12\textwidth]{SAMU_e.png}}
+\lhead{
+Movilidad ciudadana \\ 
+Dr E. Céspedes G. \\
+SAMU V Región \\
+Junio 2020}
+\rfoot{P\'agina \thepage}
+
+% titulo documento
+\title{Informe movilidad ciudadana en contexto pandemia Coronavirus19}
+\author{Dr E Céspedes-González}
+\date{Junio 2020}
+
+
+\begin{document}
+\maketitle
+
+
+\section{Introducción}
+
+Coronavirus19 o COVID19 es el nombre de la pandemia por un virus de la familia de los coronavirus que comienza en China en Diciembre del 2019 en relación a un mercado de animales de Wuhan \cite{wang_novel_2020}. Cuando se alcanzaron los 27 pacientes con neumonia grave 'inexplicable' y ya estaban en curso estudios etiológicos de secuenciación genómica por laboratorios de virología con resultados preliminares que identificaba una nueva especie de coronavirus, el 31 de Diciembre del 2019 la Comisión Municipal de Salud y Sanidad de Wuhan emite un comunicado donde declara 'la transmisión persona a persona de una enfermedad viral que produce neumonia' \cite{oms_oms_2020}.
+
+La enfermedad avanzó rápidamente:  El 13 de Enero 2020 aparece el primer caso en Tailandia, el 16 de Enero en Japón, el 20 de Enero en Estados Unidos. El 30 de Enero la Organización Mundial de la Salud declara emergencia de salud global. El 25 de Febrero aparece el primer caso en Brasil y el 3 de Marzo el primer caso en Chile. Ya para el 1 de Junio 2020 a nivel mundial hay más de 6 millones de infectados, 378.000 muertos y 2.6 millones informados como recuperados \cite{oms_covid-19_2020}.
+
+Dentro de las recomendaciones transversales para el manejo de la pandemia está el distanciamiento social, medidas de higiene y el muestreo en la población para el virus. Las medidas de higiene dependen fuertemente de la idiosincrasia de la sociedad, el muestreo de la capacidad adquisitiva y preparación de los gobiernos frente a la pandemia, pero el distanciamiento social mediado por cuarentenas dictadas por la autoridad depende principalmente por decisiones de gobierno \cite{painter_political_2020, organization_critical_2020}.
+
+En la era tecnológica que cursamos cada día hay recursos tecnológicos, de información y de datos más grandes y mejores que antes. Hoy existe la ciencia de datos, el \textit{Big data} y el \textit{Machine Learning}, disciplinas que están haciendo un cambio en las políticas públicas al colaborar en la toma de decisiones. El enfrentamiento de una pandemia o protocolos de circunstancias extraordinarias dista mucho en lo proyectado versus las herramientas realmente disponibles. Pero también hay que ser cauteloso; estas herramientas deben ser utilizadas en manos expertas y sus resultados correctamente interpretados.
+
+Respecto al distanciamiento social es difícil acceder a indicadores transversales que cuantifiquen el real comportamiento ciudadano. Se pueden utilizar indicadores de transporte público, ventas del sector retail, cantidad de fiscalizaciones, etc..., ninguna de ellas suficientemente confiable como para tomarlas en serio. Google company, por medio del departamento de datos, liberó una base de datos mundial respecto a movilidad de los usuarios basado en ubicación GPS de dispositivos móviles, principalmente teléfonos móviles. Se logran identificar países, regiones, mediciones diarias de presencia de usuarios en parques, supermercados, zonas residenciales, zonas de recreación y retail, 'zonas de trabajo', 'zonas de tránsito' \cite{google_covid-19_2020,our_world_in_data_google_2020}.
+
+En Chile el 80\% de los teléfonos móviles utiliza el sistema operativo Android, de los cuales el 74,8\% de ellos utilizan tecnología con una versión del sistema operativo susceptible de enviar datos. No podemos estar seguros de la cantidad de datos que construyen el set de datos a analizar, pero con simples cálculos preliminares se abarca al menos el 50\% de la población \cite{statcounter_mobile_nodate, android_developer_panel_nodate, casas_iphone_nodate}.
+
+El objetivo de este trabajo fue analizar la movilidad ciudadana chilena basado en datos de georeferenciación provistos por Google desde la ubicación GPS de teléfonos móviles.
+
+
+\section{Metodología}
+Trabajo descriptivo de ciencia de datos tranversal. Se analizó un set de datos publicado por Google  \cite{google_covid-19_2020} que muestra países, regiones de los países, lecturas diarias de cambio de visitas según un basal calculado en Enero del 2020 a zonas identificadas como 'Retail y recreación', 'Farmacia y Supermercados', 'Plazas y parques',	'Zonas de tránsito', 'Lugares de trabajo'.
+
+
+\section{Resultados}
+
+El set de datos muestra información de 132 países. Chile se divide en las siguientes regiones: 'O'Higgins', 'Coquimbo', 'Magallanes and Chilean Antarctica', 'Atacama',
+'Maule', 'Tarapacá', 'Valparaíso', 'Antofagasta', 'Arica y Parinacota',
+'Ñuble', 'Araucania', 'Santiago Metropolitan Region', 'Aysén',
+'Los Lagos', 'Los Ríos', 'Bio Bio'.
+
+\bibliographystyle{vancouver}
+\bibliography{bibliografia,Coronavirus_historia}
+
+
+
+\end{document}
