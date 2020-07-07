@@ -1,0 +1,27 @@
+\begin{tabular}{rcccccc}
+\toprule
+{} &  Venta minorista y recreación &  Tienda de comestibles y farmacias &  Parques &  Estaciones de tránsito &  Lugares de trabajo &  Residencial \\
+\midrule
+\textbf{10-feb} &                           0.7 &                                0.0 &      4.9 &                     0.7 &                 0.7 &          1.4 \\
+\textbf{17-feb} &                           4.5 &                                3.8 &     15.4 &                     6.2 &                 1.0 &          1.5 \\
+\textbf{24-feb} &                           4.3 &                                3.2 &      7.0 &                     3.5 &                 1.2 &          1.1 \\
+\textbf{02-mar} &                           4.3 &                                3.1 &      5.4 &                     6.2 &                 5.5 &          3.3 \\
+\textbf{09-mar} &                           4.9 &                                4.3 &      6.8 &                     4.8 &                 7.2 &          3.5 \\
+\textbf{16-mar} &                          17.7 &                               19.3 &     12.2 &                    15.1 &                13.6 &          7.1 \\
+\textbf{23-mar} &                           2.5 &                                4.8 &      4.2 &                     3.7 &                 1.9 &          1.5 \\
+\textbf{30-mar} &                           6.1 &                                7.5 &      6.7 &                     5.8 &                 3.1 &          2.8 \\
+\textbf{06-abr} &                           9.6 &                               10.6 &      8.2 &                     7.0 &                13.3 &          6.0 \\
+\textbf{13-abr} &                           3.9 &                                5.7 &      5.3 &                     3.7 &                 3.5 &          2.4 \\
+\textbf{20-abr} &                           4.0 &                                4.1 &      6.5 &                     4.2 &                 2.8 &          2.0 \\
+\textbf{27-abr} &                           9.0 &                               13.1 &      6.8 &                     5.4 &                15.9 &          6.1 \\
+\textbf{04-may} &                           5.1 &                                4.2 &      7.1 &                     4.1 &                 3.9 &          2.1 \\
+\textbf{11-may} &                           3.8 &                                3.9 &      4.5 &                     3.5 &                 2.0 &          2.0 \\
+\textbf{18-may} &                           7.5 &                                5.6 &      5.5 &                     4.6 &                14.9 &          4.2 \\
+\textbf{25-may} &                           3.6 &                                4.1 &      4.6 &                     3.2 &                 3.0 &          1.5 \\
+\textbf{01-jun} &                           4.1 &                                3.1 &      5.7 &                     4.4 &                 1.9 &          1.7 \\
+\textbf{08-jun} &                           3.8 &                                3.7 &      4.0 &                     3.4 &                 3.8 &          1.3 \\
+\textbf{15-jun} &                           4.9 &                                4.5 &      5.7 &                     4.1 &                 5.1 &          1.1 \\
+\textbf{22-jun} &                           0.7 &                                1.4 &      1.4 &                     1.4 &                 0.7 &          0.0 \\
+\bottomrule
+\end{tabular}
+

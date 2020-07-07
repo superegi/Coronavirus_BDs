@@ -8,6 +8,9 @@
 
 \usepackage{adjustbox}
 
+%loop
+%\usepackage{tikz}
+
 %% Sets page size and margins
 \usepackage[letterpaper,top=3.5cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm, headsep = 70pt]{geometry}
 
@@ -23,6 +26,8 @@
 \usepackage[hang, small,up,textfont=it,up]{caption} 
 \usepackage{fancyhdr}
 
+\newcommand\fechafinal{05 Julio 2020 }
+
 
 %cabecera y pies
 \pagestyle{fancy}
@@ -32,18 +37,20 @@
 Movilidad ciudadana \\ 
 Dr E. Céspedes G. \\
 SAMU V Región \\
-Junio 2020}
+\fechafinal}
 \rfoot{P\'agina \thepage}
 
 % titulo documento
-\title{Informe movilidad ciudadana en contexto pandemia Coronavirus19}
+\title{Movilidad ciudadana en contexto pandemia Coronavirus19}
 \author{Dr E Céspedes-González}
-\date{Junio 2020}
+\date{\fechafinal}
 
 
 \begin{document}
 \maketitle
+\tableofcontents
 
+\newpage
 
 \section{Introducción}
 
@@ -68,7 +75,7 @@ Trabajo descriptivo de ciencia de datos tranversal.
 
 Se analizó un set de datos publicado por Google  \cite{google_covid-19_2020} que muestra países, regiones de los países, lecturas diarias de cambio de visitas y su duración basados en la geolocalización de teléfonos móviles respecto a un basal. Se utilizó el manual de la sábana de datos provisto por Google para guiar el análisis de la misma \cite{google_mobility_2020}
 
-La sábana de datos analizada contiene un registro diario desde el  15 de Febrero del 2020 hasta el xxxx para 132 países y sus divisiones administrativas (Región, Zona, Estado, etc...). En la base de datos se reportan cambios en las visitas y duración de ellas de algunos lugares comparados con un basal, el que se calculó en base a la media de visitas y su duración entre el 3 de Enero al 6 de Febrero 2020. Los grandes lugares reportados fueron:
+La sábana de datos analizada contiene un registro diario desde el  15 de Febrero del 2020 hasta el \fechafinal para 132 países y sus divisiones administrativas (Región, Zona, Estado, etc...). En la base de datos se reportan cambios en las visitas y duración de ellas de algunos lugares comparados con un basal, el que se calculó en base a la media de visitas y su duración entre el 3 de Enero al 6 de Febrero 2020. Los grandes lugares reportados fueron:
 
 \begin{itemize}
 	\item Tienda de comestibles y farmacias: Tendencias de movilidad para lugares como supermercados, almacenes de alimentos, mercados de granjeros, tiendas especializadas de alimentos, farmacias
@@ -87,17 +94,17 @@ En algunos casos se reporta la desviación estandard entre
 
 \section{Resultados}
 
-Se presentan resultados a n
+Se presentan resultados de movilidad basado en el indicador de 'Estaciones de tránsito'. Se muestra la mediana semanal desde la semana del 10 de Febrero 2020 hasta los datos disponibles de  la semana del \fechafinal para los países de interés y luego para las regiones de Chile. Se presenta para los países de interés y regiones de Chile una medida de dispersión de cada semana para los datos de movilidad a lo largo del tiempo.
 
 
 \subsection{Visión mundial: Países de interés}
-El set de datos muestra información de 132 países. El análisis contempla XXXX días.
+El set de datos muestra información de 132 países.
 Los países 'de interés' analizados fueron: Chile, Reino Unido, Japón, España, Italia, Canadá, Argentina, Colombia, Perú, Brasil, Uruguay y Estados Unidos. En la figura \ref{fig:movilidad mundial} se muestra un gráfico de la evolución de la movilidad basado en el indicador \textit{Estaciones de tránsito}, en la tabla \ref{tab:movilidad mundial} se observan los datos tabulados.
 
 \begin{figure}[H]
 	\centering
 	\begin{adjustbox}{width=0.8\textwidth}
-			\includegraphics{./mundo_media.png} %%%%% grafo leído acá!!!
+			\includegraphics{./figtab/mundo_media.png} %%%%% grafo leído acá!!!
 	\end{adjustbox}
 	\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta el indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones de algunos países de interés. Se muestra el cambio porcentual respecto a un basal y la mediana de la semana en el que se calcula el indicador. }
 	\label{fig:movilidad mundial}
@@ -106,7 +113,7 @@ Los países 'de interés' analizados fueron: Chile, Reino Unido, Japón, España
 
 \begin{table}[H]
 	\begin{adjustbox}{width=1\textwidth}
-		\input{./Movilidad_mundo_media.tab}   %%%%% tabla leída acá!!!
+		\input{./figtab/Movilidad_mundo_media.tab}   %%%%% tabla leída acá!!!
 	\end{adjustbox}
 	\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta el indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones de algunos países de interés. Se muestra el cambio porcentual respecto a un basal y la mediana de la semana en el que se calcula el indicador. }
 \label{tab:movilidad mundial}
@@ -114,32 +121,35 @@ Los países 'de interés' analizados fueron: Chile, Reino Unido, Japón, España
 
 
 %%%%% VARIANZA!!!
-Cada país tuvo un comportamiento interno diferente, probablemente determinado por la fecha en que aparece el primer caso en el país o las medidas de cada gobierno. Se presenta la desviación estandard de cada país a lo largo del tiempo, una medida de dispersión de las medidas de movilidad de cada país según cada semana en la figura \ref{fig:movilidad mundial_DS} y el gráfico \ref{tab:movilidad mundial_DS}.
+Cada país tuvo un comportamiento interno diferente, probablemente determinado por la fecha en que aparece el primer caso en el país o las medidas contra la pandemia de cada gobierno. Se presenta la desviación estandard de cada país a lo largo del tiempo, una medida de dispersión de las medidas de movilidad de cada país según cada semana en la figura \ref{fig:movilidad mundial_DS} y el gráfico \ref{tab:movilidad mundial_DS}.
 
 \begin{figure}[H]
 	\centering
 	\begin{adjustbox}{width=0.8\textwidth}
-		\includegraphics{./mundo_DS.png} %%%%% grafo leído acá!!!
+		\includegraphics{./figtab/mundo_DS.png} %%%%% grafo leído acá!!!
 	\end{adjustbox}
-	\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta la desviación estandard del indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones de algunos países de interés. Se muestra la desviación estandard del cambio porcentual respecto a un basal y la mediana de la semana en el que se calcula el indicador. }
+	\caption{Dispersión de la movilidad ciudadana en la pandemia del Coronavirus19. Se presenta la desviación estandard del indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones de algunos países de interés. Se muestra la desviación estandard de la movilidad ciudadana a lo largo del tiempo. }
 	\label{fig:movilidad mundial_DS}
 \end{figure}
 
 
 \begin{table}[H]
 	\begin{adjustbox}{width=1\textwidth}
-		\input{./Movilidad_mundo_DS.tab}   %%%%% tabla leída acá!!!
+		\input{./figtab/Movilidad_mundo_DS.tab}   %%%%% tabla leída acá!!!
 	\end{adjustbox}
-	\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta el indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones de algunos países de interés. Se muestra el cambio porcentual respecto a un basal y la mediana de la semana en el que se calcula el indicador. }
+	\caption{Dispersión de la movilidad ciudadana en la pandemia del Coronavirus19. Se presenta el indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones de algunos países de interés. Se muestra la desviación estandard de la movilidad ciudadana a lo largo del tiempo.}
 	\label{tab:movilidad mundial_DS}
 \end{table}
 
 \subsection{Visión local: Chile}
 
+A continuación se presenta el análisis de los valores de movilidad ciudadana para Chile; la media semanal a lo largo del tiempo (figura \ref{fig:movilidad chile} y tabla \ref{tab:movilidad chile}) y la dispersión como desviación estandard de cada semana (figura \ref{fig:movilidad chile_DS} y tabla \ref{tab:movilidad chile_DS}) .
+
+
 \begin{figure}[H]
 	\centering
 	\begin{adjustbox}{width=0.8\textwidth}
-		\includegraphics{./chile_media.png} %%%%% grafo leído acá!!!
+		\includegraphics{./figtab/chile_media.png} %%%%% grafo leído acá!!!
 	\end{adjustbox}
 	\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta el indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones de Chile. Se muestra el cambio porcentual respecto a un basal y la mediana de la semana en el que se calcula el indicador. }
 	\label{fig:movilidad chile}
@@ -148,7 +158,7 @@ Cada país tuvo un comportamiento interno diferente, probablemente determinado p
 
 \begin{table}[H]
 	\begin{adjustbox}{width=1\textwidth}
-		\input{./Movilidad_chile_media.tab}   %%%%% tabla leída acá!!!
+		\input{./figtab/Movilidad_chile_media.tab}   %%%%% tabla leída acá!!!
 	\end{adjustbox}
 	\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta el indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones de Chile. Se muestra el cambio porcentual respecto a un basal y la mediana de la semana en el que se calcula el indicador. }
 	\label{tab:movilidad chile}
@@ -156,12 +166,11 @@ Cada país tuvo un comportamiento interno diferente, probablemente determinado p
 
 
 %%%%% VARIANZA!!!
-chile....
 
 \begin{figure}[H]
 	\centering
 	\begin{adjustbox}{width=0.8\textwidth}
-		\includegraphics{./chile_DS.png} %%%%% grafo leído acá!!!
+		\includegraphics{./figtab/chile_DS.png} %%%%% grafo leído acá!!!
 	\end{adjustbox}
 	\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta la desviación estandard del indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones de Chile. Se muestra la desviación estandard del cambio porcentual respecto a un basal y la mediana de la semana en el que se calcula el indicador. }
 	\label{fig:movilidad chile_DS}
@@ -170,17 +179,50 @@ chile....
 
 \begin{table}[H]
 	\begin{adjustbox}{width=1\textwidth}
-		\input{./Movilidad_chile_DS.tab}   %%%%% tabla leída acá!!!
+		\input{./figtab/Movilidad_chile_DS.tab}   %%%%% tabla leída acá!!!
 	\end{adjustbox}
 	\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta la desviación estandard del indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones de Chile. Se muestra la desviación estandard del cambio porcentual respecto a un basal y la mediana de la semana en el que se calcula el indicador. }
 	\label{tab:movilidad chile_DS}
 \end{table}
 
 
- Chile se divide en las siguientes regiones: 'O'Higgins', 'Coquimbo', 'Magallanes and Chilean Antarctica', 'Atacama',
-'Maule', 'Tarapacá', 'Valparaíso', 'Antofagasta', 'Arica y Parinacota',
-'Ñuble', 'Araucania', 'Santiago Metropolitan Region', 'Aysén',
-'Los Lagos', 'Los Ríos', 'Bio Bio'.
+
+%%%%
+%%%%  Las regiones
+%%%%
+
+\input{./textos/texto_region1.reg}
+
+\input{./textos/texto_region2.reg}
+
+\input{./textos/texto_region3.reg}
+
+\input{./textos/texto_region4.reg}
+
+\input{./textos/texto_region5.reg}
+
+\input{./textos/texto_region6.reg}
+
+\input{./textos/texto_region7.reg}
+
+\input{./textos/texto_region8.reg}
+
+\input{./textos/texto_region9.reg}
+
+\input{./textos/texto_region10.reg}
+
+\input{./textos/texto_region11.reg}
+
+\input{./textos/texto_region12.reg}
+
+\input{./textos/texto_region13.reg}
+
+\input{./textos/texto_region14.reg}
+
+\input{./textos/texto_region15.reg}
+
+\input{./textos/texto_region16.reg}
+
 
 
 \newpage

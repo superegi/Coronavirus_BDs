@@ -1,0 +1,42 @@
+\subsubsection{Región de Metropolitana}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%
+%%%%%%   Media
+
+\begin{figure}[H]
+	\centering
+	\begin{adjustbox}{width=0.8\textwidth}
+		\includegraphics{./figtab/Regionmedia_7.png} %%%%% grafo leído acá!!!
+	\end{adjustbox}
+	\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta el indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones. Se muestra la media de cada semana para los indicadores de movilidad.}
+	%\label{}
+\end{figure}
+
+\begin{table}[H]
+\begin{adjustbox}{width=1\textwidth}
+	\input{./figtab/tab_media_region7.tab}   %%%%% tabla leída acá!!!
+\end{adjustbox}
+\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta el indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones. Se muestra la media de cada semana para los indicadores de movilidad.}
+%\label{}
+\end{table}
+
+%%%%%%
+%%%%%%   DS
+
+\begin{figure}[H]
+	\centering
+	\begin{adjustbox}{width=0.8\textwidth}
+		\includegraphics{./figtab/RegionDS_7.png} %%%%% grafo leído acá!!!
+	\end{adjustbox}
+	\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta el indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones. Se muestra la desviación estandard de cada semana para los indicadores de movilidad.}
+	%\label{}
+\end{figure}
+
+\begin{table}[H]
+\begin{adjustbox}{width=1\textwidth}
+	\input{./figtab/tab_DS_region7.tab}   %%%%% tabla leída acá!!!
+\end{adjustbox}
+\caption{Movilidad ciudadana en la pandemia del Coronavirus19. Se presenta el indicador de movilidad basado en la cantidad visitas y duración de estas a varios tipos de localizaciones. Se muestra la desviación estandard de cada semana para los indicadores de movilidad.}
+%\label{}
+\end{table}
