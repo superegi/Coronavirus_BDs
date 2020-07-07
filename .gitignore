@@ -1,6 +1,12 @@
-*ipynb_checkpoints
+.ipynb_checkpoints 
 *.xls
 *.xlsx
+*.aux
+*.out
+*.toc
+*.blg
+*.bbl
+*.aux
 
 
 
@@ -23,7 +29,7 @@ Covid-BD/
 *.toc
 
 # PDF output - usually a bad idea to keep this in Git
-*.pdf
+# *.pdf
 
 # Latexmk
 *.fdb_latexmk
@@ -44,3 +50,18 @@ Covid-BD/
 # Sublime Text Project Files (usually contain absolute paths)
 *.sublime-project
 *.sublime-workspace
+Resultado test/rutificador/PadronElectoralChile2020.tar.gz
+
+Resultado test/rutificador/PadronElectoralChile2020.txt
+
+Movilidad/BDs/Movilidad2020-06-14.csv
+
+Movilidad/BDs/Movilidad2020-06-15.csv
+
+Movilidad/BDs/Movilidad2020-06-20.csv
+
+Movilidad/BDs/Movilidad2020-06-22.csv
+
+Movilidad/BDs/Movilidad2020-06-28.csv
+
+Movilidad/BDs/Movilidad2020-06-29.csv
