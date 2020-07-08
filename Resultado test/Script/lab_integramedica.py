@@ -1,7 +1,6 @@
 
 
 # Leo la BD
-Nombre_BD    = 'Integramedica'
 ruta         = laboratorios[Nombre_BD][0]
 
 Laboratorios_dict[Nombre_BD] = pd.read_excel(ruta, dayfirst=True,

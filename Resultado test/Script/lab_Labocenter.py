@@ -12,8 +12,8 @@ Laboratorios_dict[Nombre_BD]['LabBD'] = str('Lab_' + Nombre_BD)
 # Normalizo las columnas
 normalizacion_cols = dict({
     'correlativo SEREMI'                                                    : 'ID_SEREMI',
-    'Paciente'                                                              : 'Nombre',
     'RUN'                                                                   : 'RUT',
+    'Paciente'                                                              : 'Nombre',
     'Edad'                                                                  : 'Edad',
     'Sexo'                                                                  : 'Sexo',
     'Tipo muestra'                                                          : 'Tipo_muestra',
@@ -38,13 +38,12 @@ print(Laboratorios_dict[Nombre_BD]['Verificador_RUT'].value_counts(dropna=False)
 
 # Arreglo sexo
 Laboratorios_dict[Nombre_BD].Sexo = Laboratorios_dict[Nombre_BD].Sexo.apply(str)
-Laboratorios_dict[Nombre_BD].Sexo.value_counts().index
-norm_sexo = dict({
-    'M'                     : 'Hombre',
-    'F'                     : 'Mujer'})
-
-# Resigno nombres
-Laboratorios_dict[Nombre_BD].Sexo = Laboratorios_dict[Nombre_BD].Sexo.replace(norm_sexo)
+cambio_sexo(
+    Laboratorios_dict[Nombre_BD].Sexo,
+    dict({
+    'H'                     : 'Hombre',
+    'M'                     : 'Mujer'})
+    )
 print(Laboratorios_dict[Nombre_BD].Sexo.value_counts())
 
 # imprimo BD final

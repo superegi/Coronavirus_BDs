@@ -31,12 +31,42 @@ def verifico_RUT(valor):
 #         print(valor)
         return 'RUT_error'
 
-
 def cambio_sexo(base_y_columna):
-	normalizacion_sex = dict({
-	    'MUJER'				: 'Mujer',
-	    'Mujer '			: 'Mujer',
-	    'HOMBRE'			: 'Hombre',
-	    'HOMBRE '			: 'Hombre',
-	    'Hombre '			: 'Hombre'})
-	base_y_columna = base_y_columna.replace(normalizacion_sex, inplace=True)
+    propuesta = dict({
+        'HOMBRE'        : 'Hombre',
+        'HOMBRE '       : 'Hombre',
+        'Hombre '       : 'Hombre',
+        'Masculino '    : 'Hombre',
+        'Masculino'     : 'Hombre',
+        'Femenino'      : 'Mujer',
+        'Femenino '     : 'Mujer',
+        'MUJER'         : 'Mujer',
+        'Mujer '        : 'Mujer'}
+        )
+    base_y_columna = base_y_columna.replace(propuesta, inplace=True)
+
+def incluyo_laboratorio(Nombre_BD,archivo_script):
+    print(
+        str('x-0'*20), '\n',
+        Nombre_BD,   ' Inicio ', '\n',
+        str('x-0'*20), '\n',
+        sep = '')
+    print('Incio agregación de laboratorios...')
+    print('leyendo en :', archivo_script) 
+    if len(laboratorios[Nombre_BD]) == 0:
+        return print (
+            str('Sin bases de datos! en '+Nombre_BD + '\n')*5)    
+    if len(laboratorios[Nombre_BD]) > 1:
+        print (str('Más de una BD en '+Nombre_BD + '\n')*5)  
+    
+    print(laboratorios[Nombre_BD])
+
+
+    exec(open(archivo_script).read())
+    print( '\n',
+        str('x-0'*20), '\n',
+        Nombre_BD,   ' Fin ', '\n',
+        str('x-0'*20), '\n',
+        sep = '')
+    print('\n')
+    # return print(globals())

@@ -1,7 +1,5 @@
 
 # Dependiencias iniciales
-from funciones import *
-
 import pandas as pd
 import numpy as np
 
@@ -18,13 +16,9 @@ from babel.dates import format_date, format_datetime, format_time, format_timede
 import locale                                    # para tratar de poner espanol
 locale.setlocale(locale.LC_ALL,'es_CL.utf8')  
 
-
-
 # Funciones para el programa
-import funciones
+exec(open('./funciones.py').read())
 
-import logging
-logging.basicConfig(filename='example.log',level=logging.DEBUG)
 
 print('Inicio')
 
@@ -53,57 +47,61 @@ print('Creador de laboratorios')
 
 Laboratorios_dict = {}
 
+
+
 ##########
 ##########  Barnafi
 ##########
-current = 'Barnafi'
-archivo = './lab_barnafi.py'
-
-print(str('x'*20), '\n', current,   'inicio', '\n', str('x'*20))
-exec(open(archivo).read())
-print(str('x'*20), '\n', current,   'fin', '\n', str('x'*20))
-
+incluyo_laboratorio(
+    'Barnafi',
+    './lab_barnafi.py')
+# print(globals())
 
 ##########
 ##########  Integramedica
 ##########
-current = 'Integramedica'
-archivo = './lab_integramedica.py'
-
-
-print(str('x'*20), '\n', current,   'inicio', '\n', str('x'*20))
-exec(open(archivo).read())
-print(str('x'*20), '\n', current,   'fin', '\n', str('x'*20))
+incluyo_laboratorio(
+    'Integramedica',
+    './lab_integramedica.py')
 
 ##########
 ##########  PUCVmolecular
 ##########
-current = 'PUCVmolecular'
-archivo = './lab_PUCVmolecular.py'
-
-
-print(str('x'*20), '\n', current,   'inicio', '\n', str('x'*20))
-exec(open(archivo).read())
-print(str('x'*20), '\n', current,   'fin', '\n', str('x'*20))
-
-
-
-exit()
-
+incluyo_laboratorio(
+    'PUCVmolecular',
+    './lab_PUCVmolecular.py')
 
 ##########
-##########  XXXXXXXXXXXXXXX
+##########  PUCVmolecular
 ##########
+incluyo_laboratorio(
+    'PUCVmolecular',
+    './lab_PUCVacuicola.py')
+
+##########
+##########  Labocenter
+##########
+incluyo_laboratorio(
+    'Labocenter',
+    './lab_Labocenter.py')
+
+##########
+##########  UV
+##########
+incluyo_laboratorio(
+    'UV',
+    './lab_UV.py')
+
+##########
+##########  UV
+##########
+incluyo_laboratorio(
+    'UV',
+    './lab_UV.py')
+
 
 exec(open(
-	'./.py'
+	'./juntadorBD.py'
 	).read())
 
-
-##########
-##########  XXXXXXXXXXXXXXX
-##########
-
-exec(open(
-	'./.py'
-	).read())
+BD.to_excel('./ex.xls')

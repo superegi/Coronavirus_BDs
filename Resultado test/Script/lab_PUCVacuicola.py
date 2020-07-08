@@ -1,7 +1,6 @@
 
 
 # Leo la BD
-Nombre_BD    = 'PUCVacuicula'
 ruta         = laboratorios[Nombre_BD][0]
 
 Laboratorios_dict[Nombre_BD] = pd.read_excel(ruta, dayfirst=True,
@@ -13,21 +12,22 @@ Laboratorios_dict[Nombre_BD]['LabBD'] = str('Lab_' + Nombre_BD)
 # Normalizo las columnas
 normalizacion_cols = dict({
     'correlativo SEREMI'                                                    : 'ID_SEREMI',
-    'Paciente'                                                              : 'Nombre',
     'RUN'                                                                   : 'RUT',
-    'Edad'                                                                  : 'Edad',
-    'Sexo'                                                                  : 'Sexo',
-    'Tipo muestra'                                                          : 'Tipo_muestra',
-    'Fecha de toma de muestra'                                              : 'TS_toma',
-    'Fecha de recepción de la muestra'                                      : 'TS_recepcion',
-    'Fecha de resultado'                                                    : 'TS_resultado',
-    'Hospital o establecimiento de origen (lugar donde se toma la muestra)' : 'origen',
+    'NOMBRE '                                                               : 'Nombre',
+    'SEXO'                                                                  : 'Sexo',
+    'EDAD'                                                                  : 'Edad',
+    'RESULTADO'                                                             : 'Resultado',
+    'TIPO DE MUESTRA'                                                       : 'Tipo_muestra',
+    'FECHA TOMA DE MUESTRA'                                                 : 'TS_toma',
+    'FECHA DE RECEPCION DE MUESTRA'                                         : 'TS_recepcion',
+    'FECHA DE RESULTADO'                                                    : 'TS_resultado',
+    'HOSPITAL O ESTABLECIMIENTO DE REFERENCIA'                              : 'origen',
     'Región de establecimiento de origen'                                   : 'origenRegion',
-    'Laboratorio de referencia (lugar donde se procesa la muestra)'         : 'Laboratorio',
+    'LABORATORIO DE REFERENCIA'                                             : 'Laboratorio',
     'Región de laboratorio donde se procesa la muestra'                     : 'LaboratorioRegion',
-    'Teléfono de contacto de paciente'                                      : 'PAC_telefono',
-    'Correo de contacto de paciente'                                        : 'PAC_mail',
-    'Dirección de contacto de paciente'                                     : 'PAC_direccion',
+    'TELEFONO PACIENTE'                                                     : 'PAC_telefono',
+    'CORREO PACIENTE'                                                       : 'PAC_mail',
+    'DIRECCION PACIENTE'                                                    : 'PAC_direccion',
     'fecha validacioon'                                                     : 'TS_validacion'})
 
 # Resigno nombres
