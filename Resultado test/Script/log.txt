@@ -1,0 +1,69 @@
+Inicio
+Lector de archivos
+./BDs/PCR 2020-07-06 Seremi V.xlsx
+./BDs/PCR 2020-07-06 HCVB.xlsx
+./BDs/PCR 2020-07-06 UV.xlsx
+./BDs/PCR 2020-07-06 UPLA.xlsx
+./BDs/PCR 2020-07-06 UCx.xlsx
+./BDs/PCR 2020-07-06 HOSCA.xlsx
+./BDs/PCR 2020-07-06 Hquilpue.xlsx
+./BDs/PCR 2020-07-06 Hnaval.xlsx
+./BDs/PCR 2020-07-06 PUCV acuicula.xlsx
+./BDs/PCR 2020-07-06 HEP.xlsx
+./BDs/PCR 2020-07-06 integramedica.xlsx
+./BDs/PCR 2020-07-06 Barnafi.xlsx
+./BDs/PCR 2020-07-06 PUCV molecular.xlsx
+./BDs/PCR 2020-07-06 LABORATORIO ETCHEVERRY .xls
+./BDs/PCR 2020-07-06 Minsal diario Chile.xlsx
+./BDs/Casos posit 2020-07-06 Minsal Chile.xlsx
+./BDs/PCR 2020-07-06 HSMQ.xlsx
+./BDs/PCR 2020-07-06 TAAG.xlsx
+                                                              0                                               1
+Integramedica           ./BDs/PCR 2020-07-06 integramedica.xlsx                                            None
+Barnafi                       ./BDs/PCR 2020-07-06 Barnafi.xlsx                                            None
+PUCVmolecular          ./BDs/PCR 2020-07-06 PUCV molecular.xlsx                                            None
+PUCVacuicula            ./BDs/PCR 2020-07-06 PUCV acuicula.xlsx                                            None
+ETCHEVERRY     ./BDs/PCR 2020-07-06 LABORATORIO ETCHEVERRY .xls                                            None
+Labocenter                                                 None                                            None
+UV                                 ./BDs/PCR 2020-07-06 UV.xlsx                                            None
+HCVB                             ./BDs/PCR 2020-07-06 HCVB.xlsx                                            None
+UPLA                             ./BDs/PCR 2020-07-06 UPLA.xlsx                                            None
+UC                                ./BDs/PCR 2020-07-06 UCx.xlsx                                            None
+HOSCA                           ./BDs/PCR 2020-07-06 HOSCA.xlsx                                            None
+Hquilpue                     ./BDs/PCR 2020-07-06 Hquilpue.xlsx                                            None
+Hnaval                         ./BDs/PCR 2020-07-06 Hnaval.xlsx                                            None
+HEP                               ./BDs/PCR 2020-07-06 HEP.xlsx                                            None
+HSMQ                             ./BDs/PCR 2020-07-06 HSMQ.xlsx                                            None
+TAAG                             ./BDs/PCR 2020-07-06 TAAG.xlsx                                            None
+MINSAL            ./BDs/PCR 2020-07-06 Minsal diario Chile.xlsx  ./BDs/Casos posit 2020-07-06 Minsal Chile.xlsx
+SeremiV                                                    None                                            None
+Creador de laboratorios
+xxxxxxxxxxxxxxxxxxxx 
+ Barnafi inicio 
+ xxxxxxxxxxxxxxxxxxxx
+   Solicitud  Codigo  ...        TS_recepcion  Verificador_RUT
+0    1025868     151  ... 2020-07-04 09:14:00           RUT_OK
+2    1025911     251  ... 2020-07-04 09:44:00           RUT_OK
+3    1026152     431  ... 2020-07-04 10:27:00           RUT_OK
+
+[3 rows x 11 columns]
+xxxxxxxxxxxxxxxxxxxx 
+ Barnafi fin 
+ xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxx 
+ Integramedica inicio 
+ xxxxxxxxxxxxxxxxxxxx
+RUT_OK    369
+Name: Verificador_RUT, dtype: int64
+Hombre    196
+Mujer     173
+Name: Sexo, dtype: int64
+     Sexo  Edad  ...              LabBD Verificador_RUT
+0   Mujer    68  ...  Lab_Integramedica          RUT_OK
+1  Hombre    27  ...  Lab_Integramedica          RUT_OK
+2  Hombre    62  ...  Lab_Integramedica          RUT_OK
+
+[3 rows x 16 columns]
+xxxxxxxxxxxxxxxxxxxx 
+ Integramedica fin 
+ xxxxxxxxxxxxxxxxxxxx
