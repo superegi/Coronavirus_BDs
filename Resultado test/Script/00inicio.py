@@ -72,10 +72,10 @@ incluyo_laboratorio(
     './lab_PUCVmolecular.py')
 
 ##########
-##########  PUCVmolecular
+##########  PUCVacuicola
 ##########
 incluyo_laboratorio(
-    'PUCVmolecular',
+    'PUCVacuicola',
     './lab_PUCVacuicola.py')
 
 ##########
@@ -93,11 +93,74 @@ incluyo_laboratorio(
     './lab_UV.py')
 
 ##########
-##########  UV
+##########  ETCHEVERRY
 ##########
 incluyo_laboratorio(
-    'UV',
-    './lab_UV.py')
+    'ETCHEVERRY',
+    './lab_etcheverry.py')
+
+##########
+##########  HCVB
+##########
+incluyo_laboratorio(
+    'HCVB',
+    './lab_HCVB.py')
+
+##########
+##########  UPLA
+##########
+incluyo_laboratorio(
+    'UPLA',
+    './lab_UPLA.py')
+
+##########
+##########  UC
+##########
+incluyo_laboratorio(
+    'UC',
+    './lab_UC.py')
+
+##########
+##########  HOSCA
+##########
+incluyo_laboratorio(
+    'HOSCA',
+    './lab_HOSCA.py')
+
+##########
+##########  Hquilpue
+##########
+incluyo_laboratorio(
+    'Hquilpue',
+    './lab_Hquilpue.py')
+
+##########
+##########  Hnaval
+##########
+incluyo_laboratorio(
+    'Hnaval',
+    './lab_Hnaval.py')
+
+##########
+##########  HEP
+##########
+incluyo_laboratorio(
+    'HEP',
+    './lab_HEP.py')
+
+##########
+##########  HSMQ
+##########
+incluyo_laboratorio(
+    'HSMQ',
+    './lab_HSMQ.py')
+
+##########
+##########  TAAG
+##########
+incluyo_laboratorio(
+    'TAAG',
+    './lab_TAAG.py')
 
 
 exec(open(

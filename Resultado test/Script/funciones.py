@@ -31,18 +31,29 @@ def verifico_RUT(valor):
 #         print(valor)
         return 'RUT_error'
 
-def cambio_sexo(base_y_columna):
-    propuesta = dict({
-        'HOMBRE'        : 'Hombre',
-        'HOMBRE '       : 'Hombre',
-        'Hombre '       : 'Hombre',
-        'Masculino '    : 'Hombre',
-        'Masculino'     : 'Hombre',
-        'Femenino'      : 'Mujer',
-        'Femenino '     : 'Mujer',
-        'MUJER'         : 'Mujer',
-        'Mujer '        : 'Mujer'}
-        )
+def cambio_sexo(base_y_columna, dictado=None):
+    # Defino la variable
+    propuesta = dict()
+    #creo propuesta de dict
+    dict_sexual = dict({
+    'HOMBRE'        : 'Hombre',
+    'HOMBRE '       : 'Hombre',
+    'Hombre '       : 'Hombre',
+    'Masculino '    : 'Hombre',
+    'Masculino'     : 'Hombre',
+    'Femenino'      : 'Mujer',
+    'Femenino '     : 'Mujer',
+    'MUJER'         : 'Mujer',
+    'Mujer '        : 'Mujer'}
+    )
+
+    if dictado == None:
+        print('Usando propuesta INTERNA')
+        propuesta = dict_sexual
+    else:
+        print('Usando propuesta ingresada')
+        propuesta = dictado
+
     base_y_columna = base_y_columna.replace(propuesta, inplace=True)
 
 def incluyo_laboratorio(Nombre_BD,archivo_script):

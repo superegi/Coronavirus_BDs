@@ -22,7 +22,7 @@ normalizacion_cols = dict({
     'FECHA DE RECEPCION DE MUESTRA'                                         : 'TS_recepcion',
     'FECHA DE RESULTADO'                                                    : 'TS_resultado',
     'HOSPITAL O ESTABLECIMIENTO DE REFERENCIA'                              : 'origen',
-    'Región de establecimiento de origen'                                   : 'origenRegion',
+    'Región de establecimieto de origen'                                    : 'origenRegion',
     'LABORATORIO DE REFERENCIA'                                             : 'Laboratorio',
     'Región de laboratorio donde se procesa la muestra'                     : 'LaboratorioRegion',
     'TELEFONO PACIENTE'                                                     : 'PAC_telefono',
