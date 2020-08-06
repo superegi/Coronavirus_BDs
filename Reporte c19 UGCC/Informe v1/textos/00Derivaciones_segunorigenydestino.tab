@@ -1,0 +1,20 @@
+\begin{tabular}{rcccccc}
+\toprule
+\textbf{Tipo\_derivacion} &  Intra Público &  Intra SSVQ &  Público a Privado \\
+\textbf{Fecha creación} &                &             &                    \\
+\midrule
+\textbf{2009          } &              4 &           0 &                 64 \\
+\textbf{2010          } &             11 &           1 &                212 \\
+\textbf{2011          } &              6 &           1 &                201 \\
+\textbf{2012          } &             44 &          23 &                301 \\
+\textbf{2013          } &             44 &          31 &                391 \\
+\textbf{2014          } &             17 &          24 &                415 \\
+\textbf{2015          } &             22 &          14 &                323 \\
+\textbf{2016          } &             18 &          16 &                233 \\
+\textbf{2017          } &              6 &          22 &                268 \\
+\textbf{2018          } &              6 &          18 &                180 \\
+\textbf{2019          } &              9 &          19 &                191 \\
+\textbf{2020          } &             17 &          14 &                 84 \\
+\bottomrule
+\end{tabular}
+

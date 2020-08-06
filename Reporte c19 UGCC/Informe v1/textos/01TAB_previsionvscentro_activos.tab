@@ -1,0 +1,11 @@
+\begin{tabular}{rcccccc}
+\toprule
+\textbf{TIPO ESTABLECIMIENTO} &  Privado &  Público &  Total \\
+\textbf{ES FONASA} &          &          &        \\
+\midrule
+\textbf{NO       } &       42 &        6 &     48 \\
+\textbf{SI       } &       46 &      219 &    265 \\
+\textbf{Total    } &       88 &      225 &    313 \\
+\bottomrule
+\end{tabular}
+

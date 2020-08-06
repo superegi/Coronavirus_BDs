@@ -1,0 +1,19 @@
+\begin{tabular}{rcccccc}
+\toprule
+\textbf{Especialidad} &  ADULTO &  NEONATOLOGIA &  PEDIATRIA \\
+\textbf{Fecha creación} &         &               &            \\
+\midrule
+\textbf{2010          } &     224 &            68 &          6 \\
+\textbf{2011          } &     208 &           104 &         17 \\
+\textbf{2012          } &     368 &            90 &         17 \\
+\textbf{2013          } &     466 &            66 &         28 \\
+\textbf{2014          } &     456 &            88 &          3 \\
+\textbf{2015          } &     359 &            66 &         19 \\
+\textbf{2016          } &     267 &            55 &         33 \\
+\textbf{2017          } &     296 &            54 &         35 \\
+\textbf{2018          } &     204 &            45 &          7 \\
+\textbf{2019          } &     219 &            66 &         23 \\
+\textbf{2020          } &     115 &            49 &          1 \\
+\bottomrule
+\end{tabular}
+

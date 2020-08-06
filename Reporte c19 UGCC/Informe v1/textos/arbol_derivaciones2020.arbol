@@ -1,0 +1,16 @@
+
+
+    \node {Registros totales \\ (429)}[edge from parent fork down]
+    [sibling distance=4cm]
+      child {node { Historicos (273)  \\ Exitosos (46)}
+        child {node {Cama Básica \\ (71)}}
+        child {node {Cama Aguda \\ (25)}}
+        child {node {Casos UCI (139) \\ Casos UTI (84)}
+            child {node {Público a Privado \\ (131)}}
+            child {node {FONASA en privados \\ (58)}}
+            child {node {Hospitales otros SS \\ (18)}            }
+            child {node {Dentro de SSVQ \\ (16)}}
+        }
+    }
+    child {node {Erroneos (33) \\ Nulos  (75)}}
+    

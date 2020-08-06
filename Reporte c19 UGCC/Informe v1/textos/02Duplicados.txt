@@ -1,0 +1,2 @@
+En la base de datos hay 4214 casos, pero hay personas que tienen más de un registro dado que más de un profesional notificó el caso. Existen 3767 personas en los registros y   447 casos que son un segundo, tercer o cuarto registro de un mismo paciente. 
+En los registros hay 315 casos activos, de ellos hay 315 personas y 0 casos duplicados de estas personas.

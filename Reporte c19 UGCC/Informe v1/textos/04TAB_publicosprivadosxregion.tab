@@ -1,0 +1,20 @@
+\begin{tabular}{rcccccc}
+\toprule
+\textbf{ESTADO CASO} & \multicolumn{2}{c}{Caso activo} & \multicolumn{2}{c}{Caso histórico} \\
+\textbf{TIPO ESTABLECIMIENTO} &     Privado & Público &        Privado & Público \\
+\textbf{REGION PRESTADOR      } &             &         &                &         \\
+\midrule
+\textbf{Tarapacá              } &           0 &       0 &              0 &       4 \\
+\textbf{Antofagasta           } &           0 &       0 &              7 &      12 \\
+\textbf{Atacama               } &           0 &       0 &              1 &       1 \\
+\textbf{Coquimbo              } &           0 &       2 &              0 &       3 \\
+\textbf{Valparaíso            } &          76 &     217 &           1830 &    1761 \\
+\textbf{Metropolitana         } &          11 &       4 &            130 &      51 \\
+\textbf{O'Higgins             } &           0 &       1 &              0 &       4 \\
+\textbf{Maule                 } &           0 &       1 &              0 &       2 \\
+\textbf{Bio Bio               } &           0 &       2 &             15 &       9 \\
+\textbf{Los Lagos             } &           1 &       0 &              0 &       2 \\
+\textbf{Magallanes y Antártida} &           0 &       0 &              0 &       6 \\
+\bottomrule
+\end{tabular}
+

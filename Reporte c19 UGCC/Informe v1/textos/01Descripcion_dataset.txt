@@ -1,0 +1,2 @@
+El set de datos tiene 4214 entradas. El ingreso de datos se comienza el 2020-02-19     y tiene su último registro el 2020-08-05.     A la fecha de este reporte se encuentran 315 casos activos y 3899     casos historicos. 
+ De todos los casos en el set de datos, hay 2903, (69.103 \%) casos que son FONASA,  1000, (23.804 \%) casos que son ISAPRE. 

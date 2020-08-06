@@ -1,0 +1,103 @@
+\begin{enumerate}[label*=\arabic*.]
+		\item Inicio
+			\begin{enumerate}[label*=\arabic*.]
+				\item Portada
+				\item Agenda de contactos
+			\end{enumerate}
+	
+		\item Derivaciones
+			\begin{enumerate}[label*=\arabic*.]
+			\item Solicitud de derivaciones
+			\item Derivaciones totales
+				\begin{enumerate}[label*=\arabic*.]
+					\item Derivaciones en curso
+					\item Derivaciones exitosas
+					\item Derivaciones activas públicas
+					\item Derivaciones históricas públicas
+					\item Derivaciones activas privadas
+					\item Derivación privada histórico
+					\item Pacientes recibidos
+					\item Pacientes recibidos históricos
+					\item Derivaciones NULAS
+					\item Derivaciones ERRÓNEAS
+					\item Derivaciones sin destino
+					\item TODAS LAS DERIVACIONES (Reporte utilizado)
+				\end{enumerate}
+			\item Derivaciones UGCC
+				\begin{enumerate}[label*=\arabic*.]
+					\item Exitosa
+					\item Activas Públicas
+					\item Activas Privadas
+					\item Históricas Públicas
+					\item Históricas Privadas
+					\item Nulas
+					\item Erróneas
+				\end{enumerate}
+			
+			\item Derivaciones UGCC Paciente crónico (con sub-items no explorados)
+			\item Derivaciones segundo prestador
+				\begin{enumerate}[label*=\arabic*.]
+					\item Exitosa Pública
+					\item Exitosa Privadas
+					\item Nulas
+					\item Erróneas
+					\item Históricas Públicas
+					\item Históricas Privadas
+				\end{enumerate}
+			
+			\end{enumerate}
+	
+		\item Gestion de camas
+			\begin{enumerate}[label*=\arabic*.]
+				\item Reporte en tiempo real
+					\begin{enumerate}[label*=\arabic*.]
+						\item Ocupación y disponibilidad
+						\item Fuera de servicio
+					\end{enumerate}
+				\item Reporte captura 8.00
+				\item Estado de Camas
+				\item Reporte de camas básicas y medias
+				\item Reporte camas fuera de servicio
+				\item Reporte Mayo camas fuera de servicio
+			\end{enumerate}
+	
+		\item Informes
+			\begin{enumerate}[label*=\arabic*.]
+				\item Estado de Camas
+					\begin{enumerate}[label*=\arabic*.]
+						\item Resumen
+						\item Detalle básicos y críticos
+					\end{enumerate}
+				\item Gestión de Camas Básicas/Medias
+				\item Consolidado derivaciones exitosas
+				\item Consolidado derivaciones nulas/exitosas
+				\item Consolidados Urgencia
+			\end{enumerate}
+		
+		\item Ley de Urgencia
+			\begin{enumerate}[label*=\arabic*.]
+				\item Pacientes Ley de Urgencia
+				\item Reporte Ley de Urgencia
+					\begin{enumerate}[label*=\arabic*.]
+						\item Paciente Activos
+						\item Pacientes Históricos
+						\item Pacientes Totales
+					\end{enumerate}
+				\item LU-GRD
+			\end{enumerate}						
+				
+		\item Covid19
+			\begin{enumerate}[label*=\arabic*.]
+				\item Registro Casos
+				\item Avance compromiso Camas Covid
+				\item Reporte Camas clínicas
+				\item Ventiladores Hospitales
+				\item Reporte Ventiladores
+				\item Reporte Capacidad Ventilatoria
+			\end{enumerate}
+		
+		\item Monitor
+			\begin{enumerate}[label*=\arabic*.]	
+				\item Saturación mi región
+			\end{enumerate}			
+\end{enumerate}
