@@ -1,0 +1,20 @@
+\begin{tabular}{rcccccc}
+\toprule
+{} & \multicolumn{2}{l}{H. Gustavo Fricke} & \multicolumn{2}{l}{H. Quilpué} & \multicolumn{2}{l}{H. San Martín de Quillota} \\
+{} &              2019 & 2020 &       2019 & 2020 &                      2019 & 2020 \\
+\midrule
+\textbf{Ene} &                 4 &    5 &         19 &    9 &                        10 &    3 \\
+\textbf{Feb} &                 6 &   10 &         35 &   17 &                        11 &    6 \\
+\textbf{Mar} &                12 &   16 &         38 &   26 &                        19 &    8 \\
+\textbf{Abr} &                15 &    - &         43 &   29 &                        26 &    9 \\
+\textbf{May} &                23 &   25 &         50 &    - &                        32 &   12 \\
+\textbf{Jun} &                33 &   26 &         52 &   40 &                        43 &   20 \\
+\textbf{Jul} &                38 &   30 &         59 &   45 &                        49 &   34 \\
+\textbf{Ago} &                43 &   32 &         61 &    - &                        61 &   36 \\
+\textbf{Sep} &                46 &    - &         63 &    - &                        66 &    - \\
+\textbf{Oct} &                52 &    - &         68 &    - &                        73 &    - \\
+\textbf{Nov} &                57 &    - &         69 &    - &                        76 &    - \\
+\textbf{Dic} &                59 &    - &         75 &    - &                        85 &    - \\
+\bottomrule
+\end{tabular}
+

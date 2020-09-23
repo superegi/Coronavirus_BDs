@@ -235,10 +235,10 @@ En la tabla \ref{tab: Derivaciones historicas} se puede observar la cantidad de 
 
 La edad de los pacientes sólo se encuentra registrada hasta el año 2013 (1235 registros), la que en los adultos tiene una media de 64 años, edades extremas desde los 15 años hasta los 95 años. El rango intercuartil es desde los 48 a los 74 años.  La media de edad entre los pacientes adultos según el tipo de derivación (Intrapúblico de 62.8 años, Intra SSVQ de 59.7 años y Público a privado 59.3 años) no presentó diferencia significativa con un valor de p menor a 0.05 para la prueba de ANOVA. Se observa en la figura \ref{fig: edadyestadia_derivaciones} un gráfico de cajas y bigotes para este dato.
 
-La estadía de los pacientes tuvo una media de 7 días al ser derivados a un cama crítica, con un rango intercuartil de 4 a 11 días. Según ANOVA no hubo diferencias para las derivaciones hacia centros privados, intra públicos o hacia establecimientos del SSVQ con un valor de p de 0.008. en la figura \ref{fig: edadyestadia_derivaciones} se observa un gráfico de cajas y bigotes para este cálculo.
+La estadía de los pacientes tuvo una media de 7 días al ser derivados a un cama crítica, con un rango intercuartil de 4 a 11 días. Según ANOVA no hubo diferencias en los días de estadía para las derivaciones hacia centros privados, intra públicos o hacia establecimientos del SSVQ con un valor de p de 0.008. en la figura \ref{fig: edadyestadia_derivaciones} se observa un gráfico de cajas y bigotes para este cálculo.
 
 
-No hay registro de 
+No hay registro de sexo ni la condición de egreso (vivo o fallecido) de los pacientes. Si bien hay diagnóstico de derivación, estos están en texto libre, por lo que no se pueden agrupar.
 
 \begin{figure}
 	\centering
@@ -315,6 +315,30 @@ El set de datos contiene pacientes atendidos (históricos o están en proceso de
 	\label{tab:previsonvsESTABLECIMEITNO}
 \end{table}
 
+\subsubsection{Evolución}
+
+Se muestra un comparativo de las derivaciones a lo largo del tiempo en la tabla \ref{tab: comparativa derivaciones 2 anos}, que también se representa en la figura \ref{fig: comparativa derivaciones 2 anos}.
+
+
+\begin{table}[h]
+	\begin{adjustbox}{}
+		\input{./textos/Derivaciones_2anos.tab}   %%%%% tabla leída acá!!!
+	\end{adjustbox}
+	\caption{Derivaciones desde hospitales de alta resolución del SSVQ de pacientes adultos con necesidad de cama UPC. Comparación dos años. Se muestran valores de frecuencias absolutas acumuladas} 
+	\label{tab: comparativa derivaciones 2 anos}
+\end{table}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\includegraphics[width=.8\linewidth]{./figuras/Derivaciones_acumuladas2019.png}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\includegraphics[width=.8\linewidth]{./figuras/Derivaciones_acumuladas2020.png}
+	\end{subfigure}
+	\caption{Derivaciones desde hospitales de alta resolución del SSVQ de pacientes adultos con necesidad de cama UPC. Comparación dos años. Se muestran valores de frecuencias absolutas acumuladas}
+	\label{fig: comparativa derivaciones 2 anos}
+\end{figure}
 
 
 \newpage
