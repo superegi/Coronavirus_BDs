@@ -6,11 +6,17 @@ from colorama import Fore, Style
 
 
 
-Epi_chile = pd.read_pickle('../BDs/BD_regiones.pkl')
+Epi_chile = pd.read_pickle('../../Producto/BD_regionesSUCIO.pkl')
 
 print(Epi_chile.head())
 
-Resumen_regional = pd.ExcelFile('../BDs/20200812/Resumen Regional/20200812_Resumen regional.xlsx')
+archivo = '../../BDs/' + fecha_lectura + \
+ '_bases_por_region_PM/Resumen Regional/' \
+ + fecha_lectura + '_Resumen regional.xlsx'
+
+20201008
+
+Resumen_regional = pd.ExcelFile(archivo)
 print(Resumen_regional.sheet_names)
 
 MINSAL_POSITIVOS_nuevos                      = Resumen_regional.parse('NUEVOS NOTIFICADOS PCR +')

@@ -1,0 +1,4 @@
+Se encuentran datos de resultado de exámenes de Laboratorio, base de datos de notificación epivigila comprimidos.
+
+Van de apoco apareciendo distintas bases de datos del tipo:
+fecha_descripción.xlsx, por ejemplo 20210227_Laboratorio_regiones.xlsx

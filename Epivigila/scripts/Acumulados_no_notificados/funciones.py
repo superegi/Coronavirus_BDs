@@ -21,7 +21,10 @@ class bcolors:
 print(bcolors.WARNING + "Warning" + bcolors.ENDC)
 
 def pcolor(string):
-	return print(bcolors.WARNING + string + bcolors.ENDC)
+    TS = pd.Timestamp.now().strftime('%H:%M:%S')
+    TS = '[' + TS + ']'
+
+	return print(bcolors.WARNING +TS + string + bcolors.ENDC)
 
 
 # define el digito verificador

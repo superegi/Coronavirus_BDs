@@ -1,0 +1,11 @@
+Se encuentran datos de resultado de exámenes de Laboratorio local, BAC, laboral.
+
+Base de datos colegios
+
+Base de datos de notificación epivigila locales .csv (20210301_Región de Valparaíso_notificaciones_0600.csv)
+
+Base de datos de Seguimiento .csv (20210301_Región de Valparaíso_Seguimiento.csv)
+
+
+Van de apoco apareciendo distintas bases de datos del tipo:
+fecha_descripción.xlsx, por ejemplo 20210227_Laboratorio_regiones.xlsx

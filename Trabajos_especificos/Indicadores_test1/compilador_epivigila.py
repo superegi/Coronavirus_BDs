@@ -1,0 +1,1 @@
+../../Epivigila/scripts/compilador_epivigila.py

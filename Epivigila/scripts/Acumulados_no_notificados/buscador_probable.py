@@ -20,6 +20,7 @@ MinsalV['RUT_pb'] = np.nan
 MinsalV['Folio_pb'] = np.nan
 MinsalV['Nombres_pb'] = np.nan
 MinsalV['Region_pb'] = np.nan
+MinsalV['etapa_clinica'] = np.nan
 
 n= 0
 
@@ -35,22 +36,25 @@ for index, row in MinsalV.iterrows():
     close_match
     if len(close_match)>0:
         print(
-        	Epi_chile.loc[Epi_chile.RUT.isin(close_match)][['numero_folio', 	'fecha_notificacion',
-                                                                    'etapa_clinica', 'region',
-                                                                    'tipo_identificacion', 	'identificacion_paciente',
-                                                                    'dv', 'Nombre' ]]
-                                                                    )
+        	Epi_chile.loc[Epi_chile.RUT.isin(close_match)][
+                ['numero_folio', 	'fecha_notificacion',
+                'etapa_clinica', 'region',
+                'tipo_identificacion', 	'identificacion_paciente',
+                'dv', 'Nombre' ]]
+                )
         
-        folios = Epi_chile.loc[Epi_chile.RUT.isin(close_match)]['numero_folio']
-        Ruts = Epi_chile.loc[Epi_chile.RUT.isin(close_match)]['RUT']
-        nombres = Epi_chile.loc[Epi_chile.RUT.isin(close_match)]['Nombre']
-        region = Epi_chile.loc[Epi_chile.RUT.isin(close_match)]['region']
+        folios          = Epi_chile.loc[Epi_chile.RUT.isin(close_match)]['numero_folio']
+        Ruts            = Epi_chile.loc[Epi_chile.RUT.isin(close_match)]['RUT']
+        nombres         = Epi_chile.loc[Epi_chile.RUT.isin(close_match)]['Nombre']
+        region          = Epi_chile.loc[Epi_chile.RUT.isin(close_match)]['region']
+        ETAPA_CLINICA   = Epi_chile.loc[Epi_chile.RUT.isin(close_match)]['etapa_clinica']
 
         
-        MinsalV.loc[index, 'RUT_pb'] = str(Ruts.to_list())
-        MinsalV.loc[index, 'Folio_pb'] = str(folios.to_list())
-        MinsalV.loc[index, 'Nombres_pb'] = str(nombres.to_list())
-        MinsalV.loc[index, 'Region_pb'] = str(region.to_list())
+        MinsalV.loc[index, 'RUT_pb']        = str(Ruts.to_list())
+        MinsalV.loc[index, 'Folio_pb']      = str(folios.to_list())
+        MinsalV.loc[index, 'Nombres_pb']    = str(nombres.to_list())
+        MinsalV.loc[index, 'Region_pb']     = str(region.to_list())
+        MinsalV.loc[index, 'etapa_clinica'] = str(ETAPA_CLINICA.to_list())
 
     
     n = n+1

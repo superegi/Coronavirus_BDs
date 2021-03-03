@@ -11,9 +11,14 @@ import scipy
 from scipy import stats
 import datetime as dt
 
-fecha_lectura = '20200922'
-direccion = '../BDs/' + fecha_lectura
+fecha_lectura = '20210211'
+direccion = '../BDs/'
+# direccion = '../BDs/EpiV 20210215.xlsx'
 
+
+
+
+print(direccion)
 print('Inicio lectura de archivos')
 lista_archivos = []
 for dirname, dirnames, filenames in os.walk(direccion):
@@ -21,22 +26,27 @@ for dirname, dirnames, filenames in os.walk(direccion):
         lista_archivos.append(os.path.join(dirname, filename))
 archivos = lista_archivos
 print(archivos)
+print('\n')
 
 
-archivos_regiones = [f for f in archivos if 'Región' in f]
-print(archivos_regiones)
+archivos_regiones = [f for f in archivos if 'EpiV' in f]
+archivos_regiones_fecha = [f for f in archivos_regiones if 'EpiV' in f]
+
+print(archivos_regiones_fecha)
 
 BD_regiones = pd.DataFrame()
 for f in archivos_regiones:
     print (f)
     data = pd.read_csv(f,
                        sep = ';',
-                       encoding= 'latin',
+                       #encoding= 'latin',
+                       #encoding='utf-8-sig',
                        dayfirst=False,
                        dtype=str)
     print(data.shape)
     BD_regiones = BD_regiones.append(data)
-
+    del data                         
+        
 BD_regiones.info()
 print(BD_regiones.shape)
 
@@ -74,6 +84,8 @@ otros_drop = ['id_enfermedad_eno','enfermedad_notificada',
 	 'uso_medicamentos_antivirales', 'fecha_inicio_toma_antivirales'
 ]
 
+
+
 BD_regiones.drop(columns=valores_clinicos, inplace=True)
 BD_regiones.drop(columns=medicamentos, inplace=True)
 BD_regiones.drop(columns=otros_drop, inplace=True)
@@ -106,18 +118,22 @@ for dates in cols_fechas:
 
 
 epiV = BD_regiones[BD_regiones.region == 'Región de Valparaíso'].copy()
-epiV = epiV[[ 'numero_folio', 'estado_caso',
-				 'fecha_notificacion', 'etapa_clinica', 'establecimiento_salud', 'region',
-				 'fecha_ingreso_sistema',
+epiV = epiV[
+        ['numero_folio', 'estado_caso','fecha_notificacion',
+         'etapa_clinica', 'establecimiento_salud', 'region',
+		'fecha_ingreso_sistema',
+        
+        'identificacion_paciente', 'RUT', 'Nombre_full', 'sexo',
+        'edad', 'fecha_nacimiento', 'prevision',
+        'region_residencia', 'comuna_residencia',
 
-			'identificacion_paciente', 'RUT', 'Nombre_full', 'sexo', 'edad', 'fecha_nacimiento', 
-				'prevision', 'region_residencia', 'comuna_residencia',
-
-			'fecha_primeros_sintomas', 'motivo_examen', 'fecha_primera_consulta', 
-				'fecha_ingreso_hospital', 'fecha_egreso_hospital', 'dias_estadia', 'tipo_egreso',
-
-			'fecha_toma_muestra_1', 'resultado_pcr_1', 'lugar_reposo'
-			]]
+		'fecha_primeros_sintomas', 'motivo_examen', 'fecha_primera_consulta', 
+		'fecha_ingreso_hospital', 'fecha_egreso_hospital',
+        'dias_estadia', 'tipo_egreso',
+        
+        'fecha_toma_muestra_1', 'resultado_pcr_1', 'lugar_reposo'
+        ]
+        ]
 
 
 
@@ -135,6 +151,9 @@ BD_regiones.sample(1000).to_excel('../BD_epivigilaSAMPLE.xlsx')
 
 epiV.to_pickle('../Producto/epiV.pkl')
 epiV.to_excel('../Producto/epiV.xlsx')
+
+del epi
+del epiV
 
 veces = 5
 for x in range(0,veces):
